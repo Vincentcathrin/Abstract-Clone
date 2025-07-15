@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Using Abstract-Abstract</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        nav {
+            display: flex;
+            background-color: black;
+            align-items: center;
+            justify-content: space-between;
+            padding: 0px 7%;
+        }
+
+        .nav {
+            background-color: black;
+            color: white;
+            height: 100px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 0% 10px;
+            font-size: 25px;
+        }
+
+        .button {
+            padding: 10px 20px;
+            margin-left: 20px;
+            font-size: 20px;
+            border-radius: 10px;
+            
+        }
+
+        .button-1 {
+            background-color: black;
+            border: 1px solid white;
+            color: white;
+        }
+
+        .button-2 {
+            background-color: rgb(99, 50, 189);
+            border: 1px solid rgb(95, 69, 198);
+            color: white;
+        }
+
+        .icon {
+            display: none;
+        }
+
+
+        .header {
+           background-color: rgb(210, 193, 212);
+            color: darkslategrey;
+            justify-content: center;
+            align-items: center;
+            height: 500px;
+            display: flexbox;
+            padding-left:5%;
+            padding-top: 80px;
+        }
+        
+        
+       
+
+        .header1 h1 {
+            font-size: 100px;
+            margin-bottom:20px;
+        }
+
+        .header1 p{
+            font-size: 35px;
+        }
+
+        .header h6 {
+            font-size: 20px;
+            margin-bottom: 10px;
+        }
+.box1{
+    padding-left:30px ;
+    margin-top: 60px;
+    display: grid;
+    grid-template-columns: 1fr,1fr;
+     }
+     .main1{
+        width: 80%;
+        margin-left: 10%;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        
+
+     }
+.box1 h1{
+    font-size:60px ;
+    margin-bottom: 60px;
+
+}
+.box1 ul li{
+    font-size: 30px;
+    margin-left: 45px;
+    margin-bottom:20px ;
+    height: 40px;
+}
+.box1 a{
+    font-size:30px ;
+    text-decoration-line: none;
+    color: rgb(98, 98, 244);
+}
+.box1 h3 {
+    font-size: 35px;
+    margin-bottom: 20px;
+    margin-top: 40px;
+}
+
+
+        footer {
+            margin-top: 170px;
+            width: 100%;
+            min-height: 60vh;
+            background-color: black;
+            color: #ffffff;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 120%;
+            display: flex;
+            justify-content: space-around;
+            padding-bottom: 50px;
+        }
+
+        .foot-item ul li a {
+            text-decoration: none;
+            color: #ffffff;
+        }
+
+        .foot-item ul li {
+            list-style: none;
+            margin-top: 10px;
+        }
+
+        .foot-item h2 {
+            margin-bottom: 20px;
+        }
+
+        .foot-left {
+            display: flex;
+            width: 60%;
+            justify-content: space-between;
+            padding-top: 50px;
+        }
+
+        .foot-right {
+            width: 20%;
+            display: flex;
+            align-items: end;
+
+        }
+
+        @media screen and (max-width:1200px) {
+
+            nav .button {
+                display: none;
+            }
+
+            .icon {
+                display: block;
+
+            }
+
+        }
+
+        @media screen and (max-width:950px) {
+
+
+
+
+            footer .foot-left {
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+            }
+
+            .foot-item {
+                margin-top: 0px;
+                margin-bottom: 50px;
+
+            }
+
+            .main1{
+                display: block;
+            }
+
+        }
+    </style>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer">
+
+</head>
+
+
+<body>
+    <nav>
+        <div class="nav">
+            <div class="logo">
+                <img src="https://www.goabstract.com/" alt="">
+            </div>
+
+            <h1>
+                Abstract | Help center
+            </h1>
+        </div>
+        <div class="button">
+            <input type="text" placeholder="Search" class="button input">
+            <button class="button button-1">Submit a Request</button>
+            <button class="button button-2">Sign in</button>
+        </div>
+        <div class="icon">
+            <i class="fa-solid fa-magnifying-glass" style="color: #fafafa;" font-size:80px;></i> </i>
+            <i class="fa-solid fa-bars" style="color: #edeff2;" font-size:80px;></i>
+
+        </div>
+    </nav>
+     <header class="header">
+        <div class="header1">
+            <h6>Abstract > Using Abstract
+            </h6>
+            <h1> Using Abstract
+            </h1>
+            <p>Abstract lets you manage, version, and document your designs in one place.
+           </p>
+        </div>
+    </header>
+    
+    <section class="main1">
+        <div class="box1">
+            <h1>Get started in Abstract
+            </h1>
+            <ul>
+                <li>Try out Abstract</li>
+                <li>The Abstract Design Workflow</li>
+                <li>Start Working In Abstract</li>
+                <li>Practice Abstract workflow</li>
+                <li>Glossary</li>
+            </ul>
+        </div>
+        <div class="box1">
+            <h1>Using the Abstract Desktop App
+            </h1>
+            <ul>
+                <li>Update to the newest version of Abstract</li>
+                <li>Backing Up your Work in Abstract</li>
+                <li>System requirements</li>
+                <li>Downloading the Abstract Desktop Application</li>
+                <li>The Abstract plugin</li>
+                <li>Keyboard shortcuts</li>
+            </ul>
+            <a href="">See all 13 articles</a>
+        </div>
+
+        <div class="box1">
+            <h1>Working in Projects
+            </h1>
+            <ul>
+                <li>Name your project</li>
+                <li>Add files to your project</li>
+                <li>Create a branch</li>
+                <li>Open untracked vs. creating a branch</li>
+                <li>Change branch status</li>
+                <li>Rename a branch</li>
+            </ul>
+            <a href="">See all 10 articles</a>
+        </div>
+        <div class="box1">
+            <h1>Commit your work
+            </h1>
+            <ul>
+                <li>A guide to commits</li>
+                <li>Committing changes in a branch</li>
+                <li>Commit history</li>
+                <li>Troubleshoot your commits</li>
+            </ul>
+        </div>
+
+        <div class="box1">
+            <h1>Merge your work
+            </h1>
+            <ul>
+                <li>A Guide to Merging</li>
+                <li>Merging to the main branch</li>
+                <li>Resolve conflicts</li>
+                <li>Restore to previous commit</li>
+                <li>Merge restrictions</li>
+            </ul>
+        </div>
+
+        <div class="box1">
+            <h1>Work with libraries</h1>
+            <ul>
+                <li>Libraries Overview</li>
+                <li>Add a Library</li>
+                <li>Link a library</li>
+                <li>Update a library</li>
+                <li>Work with dependencies</li>
+                <li>Manage your libraries
+                </li>
+            </ul>
+        </div>
+        <div class="box1">
+            <h1>Collaborate in projects
+            </h1>
+            <ul>
+                <li>Share your designs</li>
+                <li>Request a design review</li>
+                <li>Use collections</li>
+                <li>Sections within collections
+                </li>
+                <li>Leave comments and annotations</li>
+                <li>Assets
+                </li>
+            </ul>
+            <a href="">See all 8 articles</a>
+        </div>
+<div class="box1">
+            <h1>Troubleshooting Abstract
+            </h1>
+            <ul>
+                <li>General Troubleshooting</li>
+                <li>Troubleshoot sync errors</li>
+                <li>Resolve a pending commit</li>
+                <li>Resolve diverged branches</li>
+                <li>Previews and asset generation
+</li>
+                <li>Sync library components in Sketch</li>
+            </ul>
+            <a href="">See all 11 articles</a>
+        </div>
+
+
+
+        <div class="box1">
+            <h1>Abstract Best Practices</h1>
+            <h3>Main</h3>
+            <ul>
+                <li>Define the main branch</li>
+            </ul>
+            <h3>Branching</h3>
+            <ul>
+                <li>Set up a new branch</li>
+                <li>Working in a branch</li>
+                <li>Prepare your branch for merging</li>
+            </ul>
+            <h3>Committing</h3>
+            <ul>
+                <li>When to commit</li>
+                <li>Committing — Part 2</li>
+            </ul>
+            <h3>Merging</h3>
+            <ul>
+                <li>Update from the main branch before merging</li>
+                <li>Resolve merge conflicts</li>
+                <li>Clean up your branch before merging</li>
+            </ul>
+            <h3>Design systems</h3>
+            <ul>
+                <li>Libraries</li>
+            </ul>
+        </div>
+    </section>
+    <footer>
+        <div class="foot-left">
+            <div class="foot-item">
+                <h2>Abstract</h2>
+                <ul>
+                    <li>
+                        <a href="">Start Trial</a>
+                    </li>
+                    <li>
+                        <a href="">Pricing</a>
+                    </li>
+                    <li>
+                        <a href="">Download</a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="foot-item">
+                <h2>Resources</h2>
+                <ul>
+                    <li>
+                        <a href="">Blog</a>
+                    </li>
+                    <li>
+                        <a href="">Help Center</a>
+                    </li>
+                    <li>
+                        <a href="">Release Note</a>
+                    </li>
+                    <li>
+                        <a href="">Status</a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="foot-item">
+                <h2>Community</h2>
+                <ul>
+                    <li>
+                        <a href="">Twitter</a>
+                    </li>
+                    <li>
+                        <a href="">Linked In</a>
+                    </li>
+                    <li>
+                        <a href="">Facebook</a>
+                    </li>
+                    <li>
+                        <a href="">Dribble</a>
+                    </li>
+                    <li>
+                        <a href="">Podcast</a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="foot-item">
+                <h2>Company</h2>
+                <ul>
+                    <li>
+                        <a href="">About Us</a>
+                    </li>
+                    <li>
+                        <a href="">Careers</a>
+                    </li>
+                    <li>
+                        <a href="">Legal</a>
+                    </li>
+                </ul>
+                <h2 style="margin-top: 20%; margin-bottom: 10%;">Content us</h2>
+                <ul>
+                    <li>
+                        <a href="">info@goabstract.com</a>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+
+        <div class="foot-right">
+            <h3>
+                © Copyright 2025
+
+                Abstract Studio Design, Inc.
+
+                All rights reserved</h3>
+        </div>
+    </footer>
+
+    
+
+    </body>
+
+</html>

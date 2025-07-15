@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>contact support-Abstract</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        nav {
+            display: flex;
+            background-color: black;
+            align-items: center;
+            justify-content: space-between;
+            padding: 0px 7%;
+        }
+
+        .nav {
+            background-color: black;
+            color: white;
+            height: 100px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 0% 10px;
+            font-size: 25px;
+        }
+
+        .button {
+            padding: 10px 20px;
+            margin-left: 20px;
+            font-size: 20px;
+            border-radius: 10px;
+            
+        }
+
+        .button-1 {
+            background-color: black;
+            border: 1px solid white;
+            color: white;
+        }
+
+        .button-2 {
+            background-color: rgb(99, 50, 189);
+            border: 1px solid rgb(95, 69, 198);
+            color: white;
+        }
+
+        .icon {
+            display: none;
+        }
+
+
+        .header {
+           background-color: rgb(210, 193, 212);
+            color: darkslategrey;
+            justify-content: center;
+            align-items: center;
+            height: 500px;
+            display: flexbox;
+            padding-left:5%;
+            padding-top: 80px;
+        }
+         .header1 h1 {
+            font-size: 100px;
+            margin-bottom:20px;
+         }
+
+        .header h6 {
+            font-size: 20px;
+            margin-bottom: 10px;
+        }
+         footer {
+            margin-top: 170px;
+            width: 100%;
+            min-height: 60vh;
+            background-color: black;
+            color: #ffffff;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 120%;
+            display: flex;
+            justify-content: space-around;
+            padding-bottom: 50px;
+        }
+
+        .foot-item ul li a {
+            text-decoration: none;
+            color: #ffffff;
+        }
+
+        .foot-item ul li {
+            list-style: none;
+            margin-top: 10px;
+        }
+
+        .foot-item h2 {
+            margin-bottom: 20px;
+        }
+
+        .foot-left {
+            display: flex;
+            width: 60%;
+            justify-content: space-between;
+            padding-top: 50px;
+        }
+
+        .foot-right {
+            width: 20%;
+            display: flex;
+            align-items: end;
+
+        }
+
+        @media screen and (max-width:1200px) {
+
+            nav .button {
+                display: none;
+            }
+
+            .icon {
+                display: block;
+
+            }
+
+        }
+
+        @media screen and (max-width:950px) {
+
+
+
+
+            footer .foot-left {
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+            }
+
+            .foot-item {
+                margin-top: 0px;
+                margin-bottom: 50px;
+
+            }
+
+
+        }
+    </style>
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer">
+</head>
+
+<body> <nav>
+        <div class="nav">
+            <div class="logo">
+                <img src="https://www.goabstract.com/" alt="">
+            </div>
+
+            <h1>
+                Abstract | Help center
+            </h1>
+        </div>
+        <div class="button">
+            <input type="text" placeholder="Search" class="button input">
+            <button class="button button-1">Submit a Request</button>
+            <button class="button button-2">Sign in</button>
+        </div>
+        <div class="icon">
+            <i class="fa-solid fa-magnifying-glass" style="color: #fafafa;" font-size:80px;></i> </i>
+            <i class="fa-solid fa-bars" style="color: #edeff2;" font-size:80px;></i>
+
+        </div>
+    </nav>
+    <header class="header">
+        <div class="header1">
+            <h6>Abstract > Abstract support  >Abstract Support
+            </h6>
+            <h1> Contact Support
+            </h1>
+            
+        </div>
+    </header>
+    <footer>
+        <div class="foot-left">
+            <div class="foot-item">
+                <h2>Abstract</h2>
+                <ul>
+                    <li>
+                        <a href="">Start Trial</a>
+                    </li>
+                    <li>
+                        <a href="">Pricing</a>
+                    </li>
+                    <li>
+                        <a href="">Download</a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="foot-item">
+                <h2>Resources</h2>
+                <ul>
+                    <li>
+                        <a href="">Blog</a>
+                    </li>
+                    <li>
+                        <a href="">Help Center</a>
+                    </li>
+                    <li>
+                        <a href="">Release Note</a>
+                    </li>
+                    <li>
+                        <a href="">Status</a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="foot-item">
+                <h2>Community</h2>
+                <ul>
+                    <li>
+                        <a href="">Twitter</a>
+                    </li>
+                    <li>
+                        <a href="">Linked In</a>
+                    </li>
+                    <li>
+                        <a href="">Facebook</a>
+                    </li>
+                    <li>
+                        <a href="">Dribble</a>
+                    </li>
+                    <li>
+                        <a href="">Podcast</a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="foot-item">
+                <h2>Company</h2>
+                <ul>
+                    <li>
+                        <a href="">About Us</a>
+                    </li>
+                    <li>
+                        <a href="">Careers</a>
+                    </li>
+                    <li>
+                        <a href="">Legal</a>
+                    </li>
+                </ul>
+                <h2 style="margin-top: 20%; margin-bottom: 10%;">Content us</h2>
+                <ul>
+                    <li>
+                        <a href="">info@goabstract.com</a>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+
+        <div class="foot-right">
+            <h3>
+                © Copyright 2025
+
+                Abstract Studio Design, Inc.
+
+                All rights reserved</h3>
+        </div>
+    </footer>
+    
+</body>
+</html>
